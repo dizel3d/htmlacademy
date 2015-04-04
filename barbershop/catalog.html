@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -34,11 +34,129 @@
         </div>
       </div>
     </header>
-    <div class="container">
-      // TODO
+    <div class="container clearfix">
+      <h1>Средства для ухода</h1>
+      <nav class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Средства для ухода</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="filters">
+        <form action="" method="get">
+          <h2>Производители:</h2>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" checked>
+                Baxter of California
+              </label>
+              <label>
+                <input type="checkbox">
+                Mr Natty
+              </label>
+              <label>
+                <input type="checkbox" checked>
+                Suavecito
+              </label>
+              <label>
+                <input type="checkbox">
+                Malin+Goetz
+              </label>
+              <label>
+                <input type="checkbox">
+                Murray's
+              </label>
+              <label>
+                <input type="checkbox" checked>
+                American crew
+              </label>
+            </li>
+          </ul>
+          <h2>Группы товаров:</h2>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="filters-category" checked>
+                Бритвенные принадлежности
+              </label>
+              <label>
+                <input type="radio" name="filters-category" checked>
+                Средства для ухода
+              </label>
+              <label>
+                <input type="radio" name="filters-category" checked>
+                Аксессуары
+              </label>
+            </li>
+          </ul>
+          <button class="btn" type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="goods">
+        <article class="good">
+          <img src="http://placehold.it/150x100">
+          <p class="description">Набор для путешествий <b>Baxter of California</b></p>
+          <a class="btn pull-right" href="#">Купить</a>
+          <p class="price">2 900 руб.</p>
+        </article>
+        <article class="good">
+          <img src="http://placehold.it/150x100">
+          <p class="description">Увлажняющий кондиционер <b>Baxter of California</b></p>
+          <a class="btn pull-right" href="#">Купить</a>
+          <p class="price">750 руб.</p>
+        </article>
+        <article class="good">
+          <img src="http://placehold.it/150x100">
+          <p class="description">Гель для волос <b>Sauvecito</b></p>
+          <a class="btn pull-right" href="#">Купить</a>
+          <p class="price">290 руб.</p>
+        </article>
+        <article class="good">
+          <img src="http://placehold.it/150x100">
+          <p class="description">Глина для укладки волос <b>American crew</b></p>
+          <a class="btn pull-right" href="#">Купить</a>
+          <p class="price">500 руб.</p>
+        </article>
+        <article class="good">
+          <img src="http://placehold.it/150x100">
+          <p class="description">Гель для волос <b>American crew</b></p>
+          <a class="btn pull-right" href="#">Купить</a>
+          <p class="price">2 900 руб.</p>
+        </article>
+        <article class="good">
+          <img src="http://placehold.it/150x100">
+          <p class="description">Набор для бритья <b>Baxter of California</b></p>
+          <a class="btn pull-right" href="#">Купить</a>
+          <p class="price">2 900 руб.</p>
+        </article>
+        <nav class="pagination">
+          <ul>
+            <li>
+              <a class="btn" href="#">1</a>
+            </li>
+            <li class="active">
+              <a class="btn" href="#">2</a>
+            </li>
+            <li>
+              <a class="btn" href="#">3</a>
+            </li>
+            <li>
+              <a class="btn" href="#">4</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп &laquo;Бородинский&raquo;<br>
           Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
