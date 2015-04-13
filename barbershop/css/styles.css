@@ -170,3 +170,29 @@ h2 {
     width: 220px;
     margin-left: 20px;
 }
+
+/* catalog-item.html */
+
+.gallery {
+    float: left;
+    width: 460px;
+}
+
+.description {
+    float: right;
+    width: 390px;
+}
+
+.pull-right {
+    float: right;
+}
+
+.gallery-more a {
+    float: left;
+    width: 140px;
+    margin-right: 20px;
+}
+
+.gallery-more a:last-child {
+    margin-right: 0;
+}
