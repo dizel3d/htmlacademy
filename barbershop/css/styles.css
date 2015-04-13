@@ -4,7 +4,7 @@ body {
     color: black;
     font-weight: bold;
     font-family: "PTSans Narrow", sans-serif;
-    min-width: 800px;
+    min-width: 960px;
     margin: 0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ h2 {
 }
 
 .container {
-    width: 660px;
+    width: 940px;
     margin: 0 auto;
 
     /* для оформления схемы */
@@ -40,7 +40,7 @@ h2 {
 .main-navigation {
     float: left;
 
-    width: 520px;
+    width: 700px;
 
     /* для оформления схемы */
     min-height: 20px;
@@ -49,7 +49,7 @@ h2 {
 .user-block {
     float: right;
 
-    width: 90px;
+    width: 140px;
 
     /* для оформления схемы */
     min-height: 20px;
@@ -60,7 +60,7 @@ h2 {
 }
 
 .logo {
-    width: 270px;
+    width: 460px;
     margin: 0 auto;
     margin-bottom: 20px;
 
@@ -70,16 +70,13 @@ h2 {
 
 .features-row {
     margin-bottom: 35px;
-
-    /* для оформления схемы */
-    padding: 5px;
 }
 
 .features-item {
     float: left;
 
-    width: 195px;
-    margin-right: 24px;
+    width: 300px;
+    margin-right: 20px;
 
     /* для оформления схемы */
     min-height: 150px;
@@ -91,7 +88,7 @@ h2 {
 
 .index-content {
     margin-bottom: 20px;
-    padding: 35px 40px;
+    padding: 60px 80px;
 }
 
 .index-content:last-child {
@@ -104,7 +101,7 @@ h2 {
 
 .content-column-left,
 .content-column-right {
-    width: 250px;
+    width: 300px;
 
     /* для оформления схемы */
     min-height: 230px;
@@ -125,8 +122,8 @@ h2 {
 .footer-contacts {
     float: left;
 
-    width: 220px;
-    margin-right: 35px;
+    width: 380px;
+    margin-right: 20px;
 
     /* для оформления схемы */
     min-height: 80px;
@@ -148,4 +145,28 @@ h2 {
 
     /* для оформления схемы */
     min-height: 80px;
+}
+
+/* catalog.html */
+
+.filters {
+    float: left;
+    width: 220px;
+}
+
+.goods {
+    float: right;
+    font-size: 0;
+    width: 720px;
+}
+
+.goods > * {
+    font-size: 14px;
+}
+
+.good {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-left: 20px;
 }
