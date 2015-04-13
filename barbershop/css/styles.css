@@ -173,12 +173,12 @@ h2 {
 
 /* catalog-item.html */
 
-.gallery {
+.item-gallery {
     float: left;
     width: 460px;
 }
 
-.description {
+.item-description {
     float: right;
     width: 390px;
 }
@@ -187,12 +187,12 @@ h2 {
     float: right;
 }
 
-.gallery-more a {
+.item-gallery-more a {
     float: left;
     width: 140px;
     margin-right: 20px;
 }
 
-.gallery-more a:last-child {
+.item-gallery-more a:last-child {
     margin-right: 0;
 }
