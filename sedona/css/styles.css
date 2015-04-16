@@ -25,11 +25,18 @@ h2 {
 }
 
 .fake-body {
+    position: relative;
     margin: 0 auto;
     min-width: 768px;
     max-width: 1200px;
     background: #fff;
     box-shadow: 0 0 15px 5px #e8e8e8;
+}
+
+.main-header:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .main-navigation ul {
@@ -59,7 +66,40 @@ h2 {
 .main-navigation img {
     display: block;
     position: absolute;
+    z-index: 10;
     left: 0;
     right: 0;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+    height: 512px;
+    overflow: hidden;
+}
+
+.banner:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/banner-mask.png') 0 bottom no-repeat;
+    background-size: 100% 57px;
+}
+
+.banner-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 76px;
     margin: 0 auto;
 }
