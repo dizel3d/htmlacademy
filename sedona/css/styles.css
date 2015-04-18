@@ -103,3 +103,61 @@ h2 {
     top: 76px;
     margin: 0 auto;
 }
+
+.reasons:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.reasons:nth-child(even) {
+    background: #eee;
+}
+
+.secondary-reason {
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 45px;
+}
+
+.secondary-reason p {
+    padding: 0 15%;
+    font-weight: normal;
+    color: #333;
+}
+
+.secondary-reason:nth-child(2) {
+    width: 34%;
+}
+
+.primary-reason {
+    background: #81b3d2;
+    height: 256px;
+    overflow: hidden;
+}
+
+.primary-reason img {
+    width: 66%;
+}
+
+.primary-reason-text {
+    width: 24%;
+    padding: 0 5%;
+    text-align: center;
+    color: white;
+    background: #81b3d2;
+}
+
+.primary-reason-text p {
+    font-weight: normal;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
