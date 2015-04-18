@@ -200,8 +200,13 @@ h2 {
     outline: none;
 }
 
+/* Карта. Изображение задано в background, тэг img определяет только размер */
+.visit .map {
+    background: url('../img/map.png') center center no-repeat;
+}
 .visit .map img {
     display: block;
+    visibility: hidden;
 }
 
 .main-footer {
