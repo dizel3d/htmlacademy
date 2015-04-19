@@ -391,7 +391,7 @@ h2 {
 }
 
 .filters form {
-    padding: 10px 70px;
+    padding: 15px 70px;
 }
 
 .filters-range-group label {
@@ -411,8 +411,40 @@ h2 {
     width: 50%;
 }
 
+.filters-range-slider {
+    margin: 20px 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 0 10px;
+}
+
+.filters-range-slider .slider-line {
+    position: relative;
+    height: 2px;
+    background: #fff;
+}
+
+.filters-range-slider .slider-btn {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    top: -9px;
+    background: #ababab;
+    cursor: pointer;
+}
+
+.filters-range-slider .slider-btn:first-child {
+    left: -10px;
+}
+
+.filters-range-slider .slider-btn:last-child {
+    right: -10px;
+}
+
 .filters [type=submit] {
-    margin: 20px auto 0 auto;
+    margin: 15px auto 0 auto;
     display: block;
     background: transparent;
     border: 2px solid #fff;
@@ -428,7 +460,7 @@ h2 {
 .filters-group legend {
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .filters-group {
@@ -442,5 +474,5 @@ h2 {
 }
 
 .filters-group .input {
-    padding: 10px 0;
+    padding: 15px 0;
 }
