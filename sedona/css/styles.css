@@ -394,6 +394,23 @@ h2 {
     padding: 10px 70px;
 }
 
+.filters-range-group label {
+    display: none;
+}
+
+.filters-range-output {
+    border: 2px solid #fff;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+    width: 220px;
+}
+
+.filters-range-output .output-field:first-child {
+    border-left: 2px solid #fff;
+    width: 50%;
+}
+
 .filters [type=submit] {
     margin: 20px auto 0 auto;
     display: block;

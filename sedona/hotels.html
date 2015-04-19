@@ -66,7 +66,7 @@
           </div>
         </fieldset>
         <div class="pull-right">
-          <fieldset class="filters-group">
+          <fieldset class="filters-group filters-range-group">
             <legend>Стоимость в сутки (р):</legend>
             <label class="filters-cost filters-cost-from">
               От <input type="number" name="cost-from" min="0" value="10">
@@ -74,6 +74,10 @@
             <label class="filters-cost filters-cost-to">
               До <input type="number" name="cost-to" min="20" max="5000" value="5000">
             </label>
+            <div class="filters-range-output clearfix">
+              <div class="output-field pull-right">До 3000</div>
+              <div class="output-field">От 0</div>
+            </div>
           </fieldset>
           <button type="submit">Показать</button>
         </div>
