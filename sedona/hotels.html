@@ -37,44 +37,46 @@
       <form class="clearfix">
         <fieldset class="filters-group pull-left">
           <legend>Инфраструктура:</legend>
-          <label>
-            <input type="checkbox" name="pool" checked>
-            Бассейн
-          </label>
-          <label>
-            <input type="checkbox" name="parking">
-            Парковка
-          </label>
-          <label>
-            <input type="checkbox" name="wifi">
-            Wi-fi
-          </label>
+          <div class="input">
+            <input id="filters-pool" type="checkbox" name="pool" checked>
+            <label for="filters-pool">Бассейн</label>
+          </div>
+          <div class="input">
+            <input id="filters-parking" type="checkbox" name="parking">
+            <label for="filters-parking">Парковка</label>
+          </div>
+          <div class="input">
+            <input id="filters-wifi" type="checkbox" name="wifi">
+            <label for="filters-wifi">Wi-fi</label>
+          </div>
         </fieldset>
         <fieldset class="filters-group pull-left">
           <legend>Тип жилья:</legend>
-          <label>
-            <input type="checkbox" name="hotel" checked>
-            Гостиница
-          </label>
-          <label>
-            <input type="checkbox" name="motel" checked>
-            Мотель
-          </label>
-          <label>
-            <input type="checkbox" name="house" checked>
-            Апартаменты
-          </label>
+          <div class="input">
+            <input id="filters-hotel" type="checkbox" name="hotel" checked>
+            <label for="filters-hotel">Гостиница</label>
+          </div>
+          <div class="input">
+            <input id="filters-motel" type="checkbox" name="motel" checked>
+            <label for="filters-motel">Мотель</label>
+          </div>
+          <div class="input">
+            <input id="filters-house" type="checkbox" name="house" checked>
+            <label for="filters-house">Апартаменты</label>
+          </div>
         </fieldset>
-        <fieldset class="filters-group pull-right">
-          <legend>Стоимость в сутки (р):</legend>
-          <label class="filters-cost filters-cost-from">
-            От <input type="number" name="cost-from" min="0" value="10">
-          </label>
-          <label class="filters-cost filters-cost-to">
-            До <input type="number" name="cost-to" min="20" max="5000" value="5000">
-          </label>
-        </fieldset>
-        <button type="submit">Показать</button>
+        <div class="pull-right">
+          <fieldset class="filters-group">
+            <legend>Стоимость в сутки (р):</legend>
+            <label class="filters-cost filters-cost-from">
+              От <input type="number" name="cost-from" min="0" value="10">
+            </label>
+            <label class="filters-cost filters-cost-to">
+              До <input type="number" name="cost-to" min="20" max="5000" value="5000">
+            </label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </div>
       </form>
     </section>
     <section class="pagination clearfix">
