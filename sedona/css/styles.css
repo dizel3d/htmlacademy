@@ -269,3 +269,28 @@ h2 {
     vertical-align: middle;
     margin-left: 5px;
 }
+
+
+/* hotels.html */
+
+.pagination {
+    padding: 35px 70px;
+}
+
+.pagination p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.pagination-found {
+    margin: 0;
+    min-width: 135px;
+    font-size: 21px;
+}
+
+.pagination-order {
+    padding: 0 30px;
+}
+
+.pagination-navigator {
+}

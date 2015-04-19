@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
-  <link href="../external/normalize.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+  <link href="../external/normalize.css" rel="stylesheet" data-noprefix>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css' data-noprefix>
+  <link href="docs/symbols-sedona/css/symbols-sedona.css" rel="stylesheet" data-noprefix>
   <link href="css/styles.css" rel="stylesheet">
   <script src="../external/prefixfree.min.js"></script>
 </head>
@@ -33,7 +34,7 @@
   </header>
   <main>
     <section class="filters">
-      <form>
+      <form class="clearfix">
         <fieldset class="filters-group pull-left">
           <legend>Инфраструктура:</legend>
           <label>
@@ -77,19 +78,17 @@
       </form>
     </section>
     <section class="pagination clearfix">
-      <div class="pull-left">
-        <h1>Найдено: 3</h1>
-        <p class="pagination-order">
-          <span class="legend">Сортировка:</span>
-          <span class="order-type active">по цене</span>
-          <a href="#" class="order-type">по типу</a>
-          <a href="#" class="order-type">по рейтингу</a>
-        </p>
-      </div>
-      <div class="pull-right">
+      <h1 class="pagination-found pull-left">Найдено: 3</h1>
+      <p class="pagination-order pull-left">
+        <span class="legend">Сортировка:</span>
+        <span class="order-type active">по цене</span>
+        <a href="#" class="order-type">по типу</a>
+        <a href="#" class="order-type">по рейтингу</a>
+      </p>
+      <p class="pagination-navigator pull-right">
         <span class="prev-btn icon-up-dir disabled">Назад</span>
         <a class="next-btn icon-down-dir" href="#">Далее</a>
-      </div>
+      </p>
     </section>
     <section class="items">
       <ul>
