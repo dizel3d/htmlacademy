@@ -31,6 +31,7 @@ h2 {
     max-width: 1200px;
     background: #fff;
     box-shadow: 0 0 15px 5px #e8e8e8;
+    overflow: hidden;
 }
 
 .main-header:after {
@@ -273,9 +274,17 @@ h2 {
 
 /* hotels.html */
 
+/* Отбивка контента страницы */
 .hotels-container {
-    padding-left: 70px;
-    padding-right: 70px;
+    /**
+     * Отступы подобраны путем решения системы уравнений:
+     * 1200 * padding - margin = 70;
+     * 768 * padding - margin = 30;
+     */
+    padding-left: 9.26%;
+    padding-right: 9.26%;
+    margin-left: -41.11px;
+    margin-right: -41.11px;
 }
 
 .pagination {
@@ -490,11 +499,4 @@ h2 {
 
 .filters-group .input {
     padding: 15px 0;
-}
-
-@media (max-width: 1000px) {
-    .hotels-container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
 }
