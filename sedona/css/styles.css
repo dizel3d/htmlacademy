@@ -323,6 +323,22 @@ h2 {
 }
 
 .pagination-navigator {
+    height: 19px;
+}
+
+.pagination-navigator .navigator-btn {
+    color: #81b3d2;
+    text-decoration: none;
+    font-size: 0;
+}
+
+.pagination-navigator .navigator-btn:before {
+    font-size: 24px;
+    margin: 0;
+}
+
+.pagination-navigator .navigator-btn.disabled {
+    color: #ccc;
 }
 
 .items {
