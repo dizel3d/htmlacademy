@@ -532,3 +532,20 @@ h2 {
 .filters-group .input {
     padding: 15px 0;
 }
+
+.filters-group .input [type="checkbox"] {
+    display: none;
+}
+
+.filters-group .input [type="checkbox"] + label:before {
+    padding-right: 23px;
+    margin: -1px 0 0 0;
+    font-size: 24px;
+    line-height: 18px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.filters-group .input [type="checkbox"]:checked + label:before {
+    content: '\2611';
+}
