@@ -303,7 +303,23 @@ h2 {
 }
 
 .pagination-order {
-    padding: 0 30px;
+    padding-left: 30px;
+}
+
+.pagination-order .legend {
+    margin-right: 30px;
+}
+
+.pagination-order .order-type {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #ccc;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.pagination-order .order-type.active {
+    color: #81b3d2;
+    border: none;
 }
 
 .pagination-navigator {
