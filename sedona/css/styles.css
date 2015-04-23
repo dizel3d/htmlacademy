@@ -182,13 +182,16 @@ h2 {
     margin-bottom: 50px;
 }
 
-.search-form .form-controls {
-    display: none;
+.search-form {
+    position: relative;
+    width: 567px;
+    margin: 0 auto;
+    font-weight: bold;
 }
 
 .search-form .form-toggle-btn {
     min-height: 60px;
-    width: 567px;
+    width: 100%;
     padding: 30px 40px;
     background: #766357;
     border: none;
@@ -200,6 +203,134 @@ h2 {
     text-transform: uppercase;
     outline: none;
 }
+
+.search-form .form-box {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 395px;
+    background: #fff;
+}
+
+.search-form .form-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 55px;
+    border: none;
+}
+
+.search-form label {
+    display: block;
+    text-align: left;
+    padding: 15px 0;
+    line-height: 38px;
+}
+
+.search-form [type="submit"] {
+    margin-top: 40px;
+    min-height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+    background: #81b3d2;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.search-form .input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-form .input input {
+    display: block;
+    margin: 0;
+    padding: 0 15px;
+    height: 38px;
+    border: none;
+    background: #f2f2f2;
+    text-transform: inherit;
+}
+
+.search-form .input .btn {
+    height: 38px;
+    width: 38px;
+    padding: 0;
+    border: none;
+    background: #f2f2f2;
+    color: #c2c2c2;
+    text-transform: inherit;
+    text-align: center;
+    outline: none;
+}
+
+.search-form .input-date {
+    position: relative;
+}
+
+.search-form .input-date input {
+    width: 290px;
+    padding-right: 40px;
+}
+
+.search-form .input-date .btn-calendar {
+    position: absolute;
+    color: #c2c2c2;
+    right: 10px;
+    top: 0;
+    text-align: right;
+    line-height: 38px;
+    vertical-align: middle;
+    font-size: 21px;
+    background: transparent;
+}
+
+.search-form .input-date .btn-calendar:before {
+    margin: 0;
+}
+
+.search-form .input-number {
+    margin-left: 20px;
+}
+
+.search-form .input-number:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.search-form .input-number .btn-down {
+    float: left;
+}
+
+.search-form .input-number .btn-up {
+    float: right;
+}
+
+.search-form .input-number input {
+    float: left;
+    width: 38px;
+    text-align: center;
+    padding: 0;
+}
+
+.persons-column:first-child {
+    width: 225px;
+}
+
+.persons-column:first-child .input {
+    float: right;
+}
+
 
 /* Карта. Изображение задано в background, тэг img определяет только размер */
 .visit .map {

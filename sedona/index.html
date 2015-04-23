@@ -104,27 +104,43 @@
            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <form class="search-form">
           <button type="button" class="form-toggle-btn">Поиск гостиницы в Седоне</button>
-          <fieldset class="form-controls">
-            <label>
-              Дата заезда:
-              <input type="date" name="from-date" class="from-date">
-            </label>
-            <label>
-              Дата выезда:
-              <input type="date" name="to-date" class="to-date">
-            </label>
-            <div class="persons clearfix">
-              <label>
-                Взрослые:
-                <input type="number" name="adults" min="0" class="adults">
+          <div class="form-box">
+            <fieldset class="form-controls">
+              <label class="clearfix">
+                Дата заезда:
+                <span class="input input-date pull-right">
+                  <input type="text" name="from-date" class="from-date" placeholder="ДД.ММ.ГГГГ" required maxlength="10" pattern="^\d{2}\.\d{2}\.\d{4}$">
+                  <button type="button" class="btn btn-calendar icon-calendar"></button>
+                </span>
               </label>
-              <label>
-                Дети:
-                <input type="number" name="children" min="0" class="children">
+              <label class="clearfix">
+                Дата выезда:
+                <span class="input input-date pull-right">
+                  <input type="text" name="to-date" class="to-date" placeholder="ДД.ММ.ГГГГ" required maxlength="10" pattern="^\d{2}\.\d{2}\.\d{4}$">
+                  <button type="button" class="btn btn-calendar icon-calendar"></button>
+                </span>
               </label>
-            </div>
-            <button type="submit">Найти</button>
-          </fieldset>
+              <div class="persons clearfix">
+                <label class="persons-column pull-left">
+                  Взрослые:
+                  <span class="input input-number">
+                    <button type="button" class="btn btn-down icon-minus"></button>
+                    <button type="button" class="btn btn-up icon-plus"></button>
+                    <input type="text" name="adults" value="1" class="adults" required maxlength="2" pattern="\d">
+                  </span>
+                </label>
+                <label class="persons-column pull-right">
+                  Дети:
+                  <span class="input input-number">
+                    <button type="button" class="btn btn-down icon-minus"></button>
+                    <button type="button" class="btn btn-up icon-plus"></button>
+                    <input type="text" name="children" value="0" class="children" required maxlength="2" pattern="\d">
+                  </span>
+                </label>
+              </div>
+              <button type="submit">Найти</button>
+            </fieldset>
+          </div>
         </form>
         <div class="map">
           <!-- заглушка для интерактивной карты -->
