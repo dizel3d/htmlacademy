@@ -731,3 +731,7 @@ h2 {
 .filters-group .input [type="checkbox"]:checked + label:before {
     content: '\2611';
 }
+
+.filters-group .input [type="checkbox"]:disabled + label:before {
+    color: #6a6a6a;
+}
