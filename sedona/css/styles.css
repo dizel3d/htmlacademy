@@ -18,11 +18,38 @@ h2 {
     line-height: 26px;
 }
 
+
+/* Вспомогательные классы */
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.vertical-center {
+    display: table;
+}
+
+.vertical-center > div {
+    display: table-row;
+}
+
+.vertical-center > div > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* index.html */
 
 .fake-body {
     position: relative;
@@ -164,12 +191,8 @@ h2 {
     background: #81b3d2;
 }
 
-.pull-left {
-    float: left;
-}
-
-.pull-right {
-    float: right;
+.primary-reason-text .vertical-center {
+    height: 256px;
 }
 
 .visit {
@@ -330,7 +353,6 @@ h2 {
 .persons-column:first-child .input {
     float: right;
 }
-
 
 /* Карта. Изображение задано в background, тэг img определяет только размер */
 .visit .map {
