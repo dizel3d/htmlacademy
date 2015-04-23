@@ -92,7 +92,27 @@ h2 {
     line-height: 56px;
     vertical-align: middle;
     text-decoration: none;
-    color: black;
+    color: #000;
+}
+
+.main-navigation li:hover a {
+    color: #81b3d2;
+}
+
+.main-navigation li:active a {
+    color: #b2b2b2;
+}
+
+.main-navigation li.active a {
+    color: #766357;
+}
+
+.main-navigation li.active:hover a {
+    color: #604e43;
+}
+
+.main-navigation li.active:active a {
+    color: #d6d0cc;
 }
 
 .main-navigation img {
