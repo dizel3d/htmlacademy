@@ -664,6 +664,10 @@ h2 {
     cursor: pointer;
 }
 
+.filters-range-slider .slider-btn:hover {
+    background: #1c4f80;
+}
+
 .filters-range-slider .slider-btn:first-child {
     left: -10px;
 }
@@ -717,6 +721,11 @@ h2 {
     line-height: 18px;
     vertical-align: middle;
     text-align: left;
+    color: #b5b5b5;
+}
+
+.filters-group .input [type="checkbox"] + label:hover:before {
+    color: #fff;
 }
 
 .filters-group .input [type="checkbox"]:checked + label:before {
