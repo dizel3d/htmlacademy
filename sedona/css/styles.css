@@ -295,6 +295,15 @@ h2 {
     outline: none;
 }
 
+.search-form [type="submit"]:hover {
+    background: #669ec0;
+}
+
+.search-form [type="submit"]:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .search-form .input {
     display: inline-block;
     vertical-align: middle;
@@ -438,6 +447,15 @@ h2 {
 .main-footer .social-btn:before {
     font-size: 19px;
     vertical-align: middle;
+}
+
+.main-footer .social-btn:hover {
+    background: #669ec0;
+}
+
+.main-footer .social-btn:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer .footer-copyrights {
