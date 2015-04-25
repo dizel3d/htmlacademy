@@ -463,9 +463,24 @@ h2 {
     width: 33%;
 }
 
-.main-footer img {
-    vertical-align: middle;
+.main-footer .footer-copyrights .logo {
+    display: inline-block;
+    height: 33px;
     margin-left: 5px;
+    vertical-align: middle;
+    background: url('../img/logo-htmlacademy.png') 0 0 no-repeat;
+}
+
+.main-footer .footer-copyrights .logo:hover {
+    background-image: url('../img/logo-htmlacademy-hvr.png');
+}
+
+.main-footer .footer-copyrights .logo:active {
+    background-image: url('../img/logo-htmlacademy-down.png');
+}
+
+.main-footer .footer-copyrights .logo img {
+    visibility: hidden;
 }
 
 
