@@ -166,12 +166,6 @@ h2 {
     margin-top: 30px;
 }
 
-.reasons:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .reasons:nth-child(even) {
     background: #eee;
 }
@@ -199,8 +193,19 @@ h2 {
     overflow: hidden;
 }
 
-.primary-reason img {
+.primary-reason-image {
     width: 66%;
+    height: 256px;
+    background: url('../img/reason-1.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.reasons:first-child .primary-reason-image {
+    background-image: url('../img/reason-1.jpg');
+}
+
+.reasons:last-child .primary-reason-image {
+    background-image: url('../img/reason-2.jpg');
 }
 
 .primary-reason-text {
