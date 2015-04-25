@@ -57,7 +57,7 @@ h2 {
     min-width: 768px;
     max-width: 1200px;
     background: #fff;
-    box-shadow: 0 0 15px 5px #e8e8e8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
@@ -259,6 +259,7 @@ h2 {
     right: 0;
     height: 395px;
     background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .search-form .form-controls {
