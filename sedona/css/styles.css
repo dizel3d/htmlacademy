@@ -466,21 +466,19 @@ h2 {
 .main-footer .footer-copyrights .logo {
     display: inline-block;
     height: 33px;
+    width: 135px;
+    font-size: 0;
     margin-left: 5px;
     vertical-align: middle;
-    background: url('../img/logo-htmlacademy.png') 0 0 no-repeat;
+    background: url('../img/logo-htmlacademy-sprite.png') 0 0 no-repeat;
 }
 
 .main-footer .footer-copyrights .logo:hover {
-    background-image: url('../img/logo-htmlacademy-hvr.png');
+    background-position-y: -66px;
 }
 
 .main-footer .footer-copyrights .logo:active {
-    background-image: url('../img/logo-htmlacademy-down.png');
-}
-
-.main-footer .footer-copyrights .logo img {
-    visibility: hidden;
+    background-position-y: -33px;
 }
 
 
