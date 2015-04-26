@@ -230,6 +230,11 @@ h2 {
     margin-bottom: 50px;
 }
 
+.visit .map {
+    background: url('../img/map.png') center center no-repeat;
+    height: 593px;
+}
+
 .search-form {
     position: relative;
     width: 567px;
@@ -387,15 +392,6 @@ h2 {
 
 .persons-column:first-child .input {
     float: right;
-}
-
-/* Карта. Изображение задано в background, тэг img определяет только размер */
-.visit .map {
-    background: url('../img/map.png') center center no-repeat;
-}
-.visit .map img {
-    display: block;
-    visibility: hidden;
 }
 
 .main-footer {
