@@ -420,6 +420,11 @@ h2 {
     text-transform: inherit;
     text-align: center;
     outline: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .search-form .input .btn:hover {
