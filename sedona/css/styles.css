@@ -817,3 +817,27 @@ h2 {
 .filters-group .input [type="checkbox"]:disabled + label:before {
     color: #6a6a6a;
 }
+
+
+/* Большие значки */
+
+.sprite-icon {
+    display: inline-block;
+    height: 76px;
+    background: url('../img/sprite-icon.png') no-repeat;
+}
+
+.sprite-icon-burger {
+    width: 74px;
+    background-position: 0 0;
+}
+
+.sprite-icon-gift {
+    width: 64px;
+    background-position: -74px 0;
+}
+
+.sprite-icon-home {
+    width: 75px;
+    background-position: -138px 0;
+}
