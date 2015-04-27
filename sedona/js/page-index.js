@@ -16,7 +16,8 @@ google.maps.event.addDomListener(window, 'load', function initialize() {
     var myLatlng = new google.maps.LatLng(34.865717, -111.763553);
     var mapOptions = {
         zoom: 9,
-        center: myLatlng
+        center: myLatlng,
+        scrollwheel: false
     };
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
