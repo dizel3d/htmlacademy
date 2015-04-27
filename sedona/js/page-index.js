@@ -1,4 +1,4 @@
-// анимация появления формы по клику на .form-toggle-btn
+// Р°РЅРёРјР°С†РёСЏ РїРѕСЏРІР»РµРЅРёСЏ С„РѕСЂРјС‹ РїРѕ РєР»РёРєСѓ РЅР° .form-toggle-btn
 ;(function() {
     var formBox = document.querySelector('.form-box');
     var toggleBtn = document.querySelector('.form-toggle-btn');
@@ -10,3 +10,19 @@
         formBox.classList.toggle('closed');
     });
 })();
+
+// РёРЅС‚РµСЂР°РєС‚РёРІРЅР°СЏ РєР°СЂС‚Р°
+google.maps.event.addDomListener(window, 'load', function initialize() {
+    var myLatlng = new google.maps.LatLng(34.865717, -111.763553);
+    var mapOptions = {
+        zoom: 9,
+        center: myLatlng
+    };
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'РЎРµРґРѕРЅР°'
+    });
+});

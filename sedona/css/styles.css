@@ -1,4 +1,4 @@
-/* Символьный шрифт */
+/* РЎРёРјРІРѕР»СЊРЅС‹Р№ С€СЂРёС„С‚ */
 
 @font-face {
     font-family: 'symbols-sedona';
@@ -65,7 +65,7 @@
 .icon-youtube:before { content: '\f39e'; } /* '?' */
 
 
-/* Основные стили */
+/* РћСЃРЅРѕРІРЅС‹Рµ СЃС‚РёР»Рё */
 
 body {
     font-size: 14px;
@@ -88,7 +88,7 @@ h2 {
 }
 
 
-/* Вспомогательные классы */
+/* Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Рµ РєР»Р°СЃСЃС‹ */
 
 .clearfix:after {
     content: "";
@@ -300,8 +300,12 @@ h2 {
 }
 
 .visit .map {
-    background: url('../img/map.png') center center no-repeat;
     height: 593px;
+}
+
+.visit .map-nojs {
+    background: url('../img/map.png') center center no-repeat;
+    height: 100%;
 }
 
 .search-form {
@@ -328,6 +332,7 @@ h2 {
 
 .search-form .form-box {
     position: absolute;
+    z-index: 10;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -579,10 +584,10 @@ h2 {
 
 /* hotels.html */
 
-/* Отбивка контента страницы */
+/* РћС‚Р±РёРІРєР° РєРѕРЅС‚РµРЅС‚Р° СЃС‚СЂР°РЅРёС†С‹ */
 .hotels-container {
     /**
-     * Отступы подобраны путем решения системы уравнений:
+     * РћС‚СЃС‚СѓРїС‹ РїРѕРґРѕР±СЂР°РЅС‹ РїСѓС‚РµРј СЂРµС€РµРЅРёСЏ СЃРёСЃС‚РµРјС‹ СѓСЂР°РІРЅРµРЅРёР№:
      * 1200 * padding - margin = 70;
      * 768 * padding - margin = 30;
      */
@@ -918,7 +923,7 @@ h2 {
 }
 
 
-/* Большие значки */
+/* Р‘РѕР»СЊС€РёРµ Р·РЅР°С‡РєРё */
 
 .sprite-icon {
     display: inline-block;
